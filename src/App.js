@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
+import Projects from './Projects';
 
 class App extends Component {
   constructor() {
@@ -44,6 +45,8 @@ class App extends Component {
         </div>
       )
         }
+        <hr />
+        <Projects />
       </div>
     )
   }
