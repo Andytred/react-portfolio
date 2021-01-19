@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
 
 class App extends Component {
   constructor() {
@@ -47,6 +48,7 @@ class App extends Component {
         }
         <hr />
         <Projects />
+        <SocialProfiles />
       </div>
     )
   }
