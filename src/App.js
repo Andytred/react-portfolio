@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import profile from './assets/andrea.png';
 
 class App extends Component {
   constructor() {
@@ -30,6 +31,7 @@ class App extends Component {
 
     return (
       <div>
+        <img src={profile} alt='profile' className='profile'/>
         <h1>Hello</h1>
         <p>My name is Andrea, I'm a service designer and Junior front-end developer</p>
         {
