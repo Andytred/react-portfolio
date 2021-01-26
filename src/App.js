@@ -36,6 +36,7 @@ class App extends Component {
         <h1>Hello</h1>
         <p>My name is Andrea</p>
         <Title />
+        <p>Im always looking for new challenges</p>
         {
          this.state.displayBio ? (
         <div>
