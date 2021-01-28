@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
-import profile from './assets/andrea.png';
+import profile from '../assets/andrea.png';
 
 class App extends Component {
   constructor() {
