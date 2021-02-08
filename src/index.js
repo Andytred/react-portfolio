@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { Router, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
+// import createBrowserHistory from 'history/createBrowserHistory';
+import { createBrowserHistory as createHistory } from 'history';
 import './index.css';
 import App from './components/App';
+import Jokes from './components/Jokes';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<React.StrictMode><App />
-  </React.StrictMode>,
+// const history = createBrowserHistory();
+const history = createHistory();
+
+ReactDOM.render(
+  <Router history={history}>
+    <Switch>
+      <Route exact={true} path='/' component={App} />
+      <Route path='/jokes' component={Jokes} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
-);
+  );
 
 
 
