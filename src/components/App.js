@@ -5,6 +5,7 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
 import Jokes from './Jokes';
+import Header from './Header';
 import profile from '../assets/andrea.png';
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         <img src={profile} alt='profile' className='profile'/>
         <h1>Hello</h1>
         <p>My name is Andrea</p>

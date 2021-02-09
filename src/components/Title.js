@@ -11,7 +11,7 @@ class Title extends Component {
     state = { titleIndex: 0, fadeIn: true };
 
     componentDidMount() {
-        this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000 );
+        this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 1000 );
         
         this.animateTitles();
     }
